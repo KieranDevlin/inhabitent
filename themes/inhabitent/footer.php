@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer.
  *
@@ -7,16 +8,48 @@
 
 ?>
 
-			</div><!-- #content -->
+</div><!-- #content -->
 
-			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
-				</div><!-- .site-info -->
-			</footer><!-- #colophon -->
-		</div><!-- #page -->
+<footer id="colophon" class="site-footer" role="contentinfo" style="background:url(<?= get_stylesheet_directory_uri(); ?>/images/dark-wood.png)">
+	<div class="site-footer-main">
+		<div class="business-info">
+			<div class="footer-info">
+				<h3>CONTACT INFO</h3>
+				<ul class="list-styles">
+					<li><span class="icon-styles"><i class="fas fa-envelope"></i></span><a href="mailto:info@inhabitent.com">info@inhabitent.com</a> </li>
+					<li><span class="icon-styles"><i class="fas fa-phone-alt"></i></span><a href="tel:778-456-7891"> 778-456-7891</a></li>
+					<li><span class="icon-styles"><i class="fab fa-facebook-square"></i></span><span class="icon-styles"><i class="fab fa-twitter-square"></i></span><span class="icon-styles"><i class="fab fa-google-plus-square"></i></span></li>
+				</ul>
 
-		<?php wp_footer(); ?>
+			</div>
+			<div class="footer-info">
+				<H3>BUSINESS HOURS</H3>
+				<ul class="list-styles">
+					<li><span class="bold-text">Monday-Friday: </span>9am to 5pm</li>
+					<li><span class="bold-text">Saturday: </span>10am to 2pm</li>
+					<li><span class="bold-text">Sunday: </span>Closed</li>
 
-	</body>
+				</ul>
+			</div>
+		</div>
+		<div class="logo-container">
+
+			<a href="#"><img class="footer-logo" src="<?= get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg" alt="Inhabitent company logo"></a>
+		</div>
+	</div>
+
+
+	<div class="site-info">
+
+		<p> COPYRIGHT &copy; 2019 INHABITENT <a href="<?php echo esc_url('https://wordpress.org/'); ?>"><?php printf(esc_html('Proudly powered by %s'), 'WordPress'); ?></a></p>
+	</div>
+	<!--.site-info-->
+
+</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<?php wp_footer(); ?>
+
+</body>
+
 </html>
