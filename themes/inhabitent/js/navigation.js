@@ -7,9 +7,11 @@
 
 const searchIcon = document.getElementById('search');
 const searchInput = document.getElementById('search-input');
+const searchContainer = document.getElementById('search-text-container');
 const mainNav = document.getElementById('site-navigation');
 
 searchIcon.addEventListener('click', () => {
+  searchContainer.classList.toggle('animate-container');
   searchInput.classList.toggle('animate-search');
   mainNav.classList.toggle('animate-nav');
 })(function() {
