@@ -4,7 +4,15 @@
  * Handles toggling the navigation menu for small screens and enables TAB key
  * navigation support for dropdown menus.
  */
-(function() {
+
+const searchIcon = document.getElementById('search');
+const searchInput = document.getElementById('search-input');
+const mainNav = document.getElementById('site-navigation');
+
+searchIcon.addEventListener('click', () => {
+  searchInput.classList.toggle('animate-search');
+  mainNav.classList.toggle('animate-nav');
+})(function() {
   let container, button, menu, links, i, len;
 
   container = document.getElementById('site-navigation');
