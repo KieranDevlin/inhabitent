@@ -701,13 +701,6 @@ object {
   .search-button .search-image {
     color: #248a83; }
 
-.main-navigation {
-  position: relative;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-transform: translate(0);
-          transform: translate(0); }
-
 .search-text-container {
   height: 1.5rem;
   overflow: hidden;
