@@ -620,6 +620,9 @@ a {
     .widget ul a {
       text-decoration: none; }
 
+.widget-title {
+  text-transform: uppercase; }
+
 /* Search widget. */
 .widget_search .search-submit {
   display: none; }
@@ -793,6 +796,10 @@ object {
 /* About page */
 .about-content-area {
   width: 80%; }
+
+/* Single Product */
+.single-product-area {
+  width: 100%; }
 
 .site-header {
   z-index: 99999;
