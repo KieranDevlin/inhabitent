@@ -17,7 +17,7 @@
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
 	<!-- GOOGLE FONTS -->
-	<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400&display=swap" rel="stylesheet">
 
 
 	<?php wp_head(); ?>

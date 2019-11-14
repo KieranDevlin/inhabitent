@@ -41,7 +41,7 @@
 
 	<div class="site-info">
 
-		<p> COPYRIGHT &copy; 2019 INHABITENT <a href="<?php echo esc_url('https://wordpress.org/'); ?>"><?php printf(esc_html('Proudly powered by %s'), 'WordPress'); ?></a></p>
+		<p> COPYRIGHT &copy; 2019 INHABITENT </p>
 	</div>
 	<!--.site-info-->
 

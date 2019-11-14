@@ -3,3 +3,29 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+.front-apge-content-area {
+  .content-area {
+    width: 100%;
+    border-right: none;
+    // height: $base__space-unit * 5;
+  }
+}
+.front-page-journal-container {
+  display: flex;
+}
+
+.front-page-journal-post {
+  border: 1px solid $light_grey_brand_color;
+  background-color: $light_grey_brand_color;
+  margin: $base__space-unit * 0.5;
+}
+
+.front-page-journal-info {
+  background-color: $main_background;
+}
+/* About page */
+
+//about page layout
+.about-content-area {
+  width: 80%;
+}

@@ -5,14 +5,7 @@
  * navigation support for dropdown menus.
  */
 
-const searchIcon = document.getElementById('search');
-const searchInput = document.getElementById('search-input');
-const searchContainer = document.getElementById('search-text-container');
-
-searchIcon.addEventListener('click', () => {
-  searchContainer.classList.toggle('animate-container');
-  searchInput.classList.toggle('animate-search');
-})(function() {
+(function() {
   let container, button, menu, links, i, len;
 
   container = document.getElementById('site-navigation');

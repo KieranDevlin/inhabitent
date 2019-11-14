@@ -254,14 +254,23 @@ textarea {
   line-height: 1.75; }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Novacento", sans-serif;
   clear: both; }
 
 /* Copy */
 p {
   margin-bottom: 1.5rem; }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
   font-style: italic; }
 
 blockquote {
@@ -281,16 +290,21 @@ pre {
   overflow: auto;
   padding: 1.6rem; }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem; }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #666;
   cursor: help; }
 
-mark, ins {
+mark,
+ins {
   background: #fff9c0;
   text-decoration: none; }
 
@@ -400,7 +414,36 @@ input[type='submit'] {
     -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
             box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
 
+/*--------------------------------------------------------------
+# My Code
+--------------------------------------------------------------*/
+.read-more-button {
+  font-size: 0.9rem;
+  font-family: "Novacento", sans-serif;
+  text-decoration: none;
+  color: #2f1339;
+  border: 1px solid #2f1339;
+  padding: 0.75rem 1.5rem; }
+  .read-more-button:hover, .read-more-button:focus {
+    color: #ffffff;
+    background-color: #248a83;
+    border-color: #248a83; }
+
 /* Fields */
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0; }
+  fieldset label {
+    border: none;
+    padding: 0;
+    margin: 0; }
+  fieldset input {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -552,9 +595,30 @@ a {
 --------------------------------------------------------------*/
 .widget {
   margin: 0 0 1.5rem;
+  padding-left: 3rem;
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
+  .widget p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 2.625rem;
+    margin: 0; }
+    .widget p a {
+      text-decoration: none; }
+  .widget .days-of-operation {
+    font-size: 1.125rem;
+    font-weight: bold; }
+  .widget i {
+    min-width: 2.25rem;
+    line-height: 2.7; }
+  .widget ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+    .widget ul a {
+      text-decoration: none; }
 
 /* Search widget. */
 .widget_search .search-submit {
@@ -585,6 +649,53 @@ a {
 .page-links {
   clear: both;
   margin: 0 0 1.5rem; }
+
+/*--------------------------------------------------------------
+# My Code
+--------------------------------------------------------------*/
+.site-content {
+  width: 1120px;
+  margin: 72px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .site-content .content-area {
+    width: 70%;
+    border-right: 1px solid #a1a1a1;
+    padding: 3rem 4.5rem 3rem 0; }
+  .site-content .widget-area {
+    width: 30%; }
+
+.post-container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 3rem; }
+
+.entry-header {
+  line-height: 0;
+  text-transform: uppercase;
+  position: relative;
+  font-family: "Novacento", sans-serif; }
+  .entry-header .entry-title {
+    margin: 2.25rem 0;
+    max-width: 75%;
+    line-height: 1.25;
+    font-size: 2.25rem;
+    background-color: #248a83;
+    padding: 0.75rem;
+    position: absolute;
+    top: 0; }
+    .entry-header .entry-title a {
+      color: #ffffff;
+      text-decoration: none; }
+  .entry-header .entry-meta {
+    line-height: 2;
+    background-color: #248a83;
+    color: #ffffff;
+    padding: 0.3rem 1.5rem;
+    position: absolute;
+    bottom: 0;
+    right: 0; }
 
 /* Asides */
 .blog .format-aside .entry-title,
@@ -662,7 +773,29 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.front-apge-content-area .content-area {
+  width: 100%;
+  border-right: none; }
+
+.front-page-journal-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.front-page-journal-post {
+  border: 1px solid #a1a1a1;
+  background-color: #a1a1a1;
+  margin: 0.75rem; }
+
+.front-page-journal-info {
+  background-color: #ffffff; }
+
+/* About page */
+.about-content-area {
+  width: 80%; }
+
 .site-header {
+  z-index: 99999;
   min-width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 0.75rem 0;
@@ -670,7 +803,7 @@ object {
   position: fixed;
   top: 0; }
   .site-header .header-items {
-    max-width: 90%;
+    width: 1120px;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -750,7 +883,6 @@ object {
           justify-content: space-between; }
 
 .footer-info h3 {
-  font-family: 'Novecento', sans-serif;
   color: #d99054;
   margin-top: 0;
   letter-spacing: 0.1875rem; }
@@ -785,6 +917,7 @@ object {
           align-items: flex-start; }
 
 .footer-logo {
+  width: 300px;
   margin: 0; }
 
 .site-info {

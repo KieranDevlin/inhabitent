@@ -3,15 +3,44 @@
 --------------------------------------------------------------*/
 
 .widget {
-	margin: 0 0 $base__space-unit;
+  margin: 0 0 $base__space-unit;
+  padding-left: $base__space-unit * 2;
 
-	/* Make sure select elements fit in widgets. */
-	select {
-		max-width: 100%;
-	}
+  /* Make sure select elements fit in widgets. */
+  select {
+    max-width: 100%;
+  }
+
+  p {
+    display: flex;
+    line-height: $base__space-unit * 1.75;
+    margin: 0;
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .days-of-operation {
+    font-size: $base__space-unit * 0.75;
+    font-weight: bold;
+  }
+
+  i {
+    min-width: $base__space-unit * 1.5;
+    line-height: 2.7;
+  }
+
+  ul {
+    a {
+      text-decoration: none;
+    }
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
 }
 
 /* Search widget. */
 .widget_search .search-submit {
-	display: none;
+  display: none;
 }

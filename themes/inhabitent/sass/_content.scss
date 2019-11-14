@@ -4,46 +4,108 @@
 
 /* Posts and pages */
 
+//main site layout
+
 .sticky {
-	display: block;
+  display: block;
 }
 
 .hentry {
-	margin: 0 0 $base__space-unit;
+  margin: 0 0 $base__space-unit;
 }
 
-.updated:not(.published){
-	display: none;
+.updated:not(.published) {
+  display: none;
 }
 
 .single .byline,
 .group-blog .byline {
-	display: inline;
+  display: inline;
 }
 
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: $base__space-unit 0 0;
+  margin: $base__space-unit 0 0;
 }
 
 .page-links {
-	clear: both;
-	margin: 0 0 $base__space-unit;
+  clear: both;
+  margin: 0 0 $base__space-unit;
+}
+
+/*--------------------------------------------------------------
+# My Code
+--------------------------------------------------------------*/
+
+//main layout
+.site-content {
+  width: 1120px;
+  margin: 72px auto 0;
+  display: flex;
+
+  .content-area {
+    width: 70%;
+    border-right: 1px solid $light_grey_brand_color;
+    padding: ($base__space-unit * 2) ($base__space-unit * 3)
+      ($base__space-unit * 2) 0;
+  }
+
+  .widget-area {
+    width: 30%;
+  }
+}
+
+// post layout
+
+.post-container {
+  box-sizing: border-box;
+  margin-bottom: $base__space-unit * 2;
+}
+
+.entry-header {
+  line-height: 0;
+  text-transform: uppercase;
+  position: relative;
+  font-family: $font__headings;
+  .entry-title {
+    margin: ($base__space-unit * 1.5) 0;
+    max-width: 75%;
+    line-height: 1.25;
+    font-size: $base__space-unit * 1.5;
+    background-color: $green_brand_color;
+    padding: $base__space-unit * 0.5;
+    position: absolute;
+    top: 0;
+    a {
+      color: $main_background;
+      text-decoration: none;
+    }
+  }
+  .entry-meta {
+    line-height: 2;
+    background-color: $green_brand_color;
+    color: $main_background;
+    padding: $base__space-unit * 0.2 $base__space-unit;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 /* Asides */
 
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
-	display: none;
+  display: none;
 }
 
 /* Comments */
 
 .comment-content a {
-	word-wrap: break-word;
+  word-wrap: break-word;
 }
 .bypostauthor {
-	display: block;
+  display: block;
 }
