@@ -15,12 +15,30 @@
 
 .front-page-journal-post {
   border: 1px solid $light_grey_brand_color;
-  background-color: $light_grey_brand_color;
   margin: $base__space-unit * 0.5;
+  height: 420px;
+  position: relative;
+
+  img {
+    padding-bottom: 5px;
+    background-color: $light_grey_brand_color;
+  }
 }
 
 .front-page-journal-info {
   background-color: $main_background;
+  padding: $base__space-unit * 0.5;
+  p {
+    font-size: $base__space-unit * 0.5;
+    margin: 0;
+    padding: 0;
+  }
+
+  h3 {
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
 }
 /* About page */
 

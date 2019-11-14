@@ -429,6 +429,14 @@ input[type='submit'] {
     background-color: #248a83;
     border-color: #248a83; }
 
+.front-page-read-entry {
+  position: absolute;
+  bottom: 10px;
+  left: 10px; }
+
+a {
+  text-decoration: none; }
+
 /* Fields */
 fieldset {
   border: none;
@@ -787,11 +795,24 @@ object {
 
 .front-page-journal-post {
   border: 1px solid #a1a1a1;
-  background-color: #a1a1a1;
-  margin: 0.75rem; }
+  margin: 0.75rem;
+  height: 420px;
+  position: relative; }
+  .front-page-journal-post img {
+    padding-bottom: 5px;
+    background-color: #a1a1a1; }
 
 .front-page-journal-info {
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  padding: 0.75rem; }
+  .front-page-journal-info p {
+    font-size: 0.75rem;
+    margin: 0;
+    padding: 0; }
+  .front-page-journal-info h3 {
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
 
 /* About page */
 .about-content-area {
