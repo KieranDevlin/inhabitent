@@ -2,13 +2,32 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+/* Feature Image Pages */
+
+.page-feature-image-title {
+  color: $main_background;
+  font-size: $base__space-unit * 2.5;
+}
+
+.page-feature-image {
+  height: 100vh;
+  width: 100vw;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Front page */
 
 //layout
-.front-apge-content-area {
-  .content-area {
-    width: 100%;
-    border-right: none;
+.front-page-content-area {
+  .site-main {
+    // width: 1120px;
+    // border-right: none;
+    // margin: 0 auto;
   }
 }
 .front-page-title {
@@ -16,12 +35,13 @@
   font-size: $base__space-unit * 1.5;
   font-weight: lighter;
   text-align: center;
-  margin: ($base__space-unit * 2) 0;
+  margin: 0 0 72px;
 }
 
 //shop section
 .product-type-blocks {
   display: flex;
+  margin-bottom: 72px;
   .product-type-block-wrapper {
     margin: $base__space-unit * 0.5;
     height: $base__space-unit * 13;
@@ -57,6 +77,7 @@
 
 //journal section
 .front-page-journal-container {
+  margin-bottom: 72px;
   display: flex;
 }
 
@@ -90,17 +111,28 @@
 /* About page */
 
 //about page layout
+
 .about-content-area {
-  width: 80%;
   margin: 0 auto;
+  width: 75%;
+
+  .site-main {
+    // width: 1120px;
+    // border-right: none;
+    // margin: 0 auto;
+  }
 
   .entry-content {
-    margin: ($base__space-unit * 3) 0;
+    margin: 0 0 72px;
+  }
+
+  header {
+    display: none;
   }
   h2 {
     font-size: $base__space-unit * 1.5;
     text-align: center;
-    margin: $base__space-unit * 2;
+    margin: $base__space-unit * 1.5 0;
   }
 }
 
@@ -118,3 +150,44 @@
 }
 
 /* Find Us Page */
+
+.google-maps-location {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  iframe {
+    width: 100%;
+  }
+}
+.wpcf7 {
+  p {
+    margin: 0;
+    .wpcf7-text {
+      border: 1px solid $dotted-border-brand-color;
+      background-color: $solid-border-brand-color;
+    }
+    .wpcf7-textarea {
+      width: 100%;
+      background-color: $solid-border-brand-color;
+      border-color: $dotted-border-brand-color;
+    }
+    .wpcf7-submit {
+      background-color: $green-brand-color;
+      border-color: $green-brand-color;
+      color: $main_background;
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: darken($green-brand-color, 12.5%);
+        border-color: darken($green-brand-color, 12.5%);
+      }
+    }
+  }
+  h3 {
+    margin: ($base__space-unit * 0.25) 0;
+    font-weight: lighter;
+  }
+  .email-form-asterisk {
+    color: $orange-brand-color;
+  }
+}

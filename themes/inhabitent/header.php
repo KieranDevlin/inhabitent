@@ -48,5 +48,20 @@
 				</nav><!-- #site-navigation -->
 			</div>
 		</header><!-- #masthead -->
+		<?php // check if the page has a page Thumbnail assigned to it.
+		if (has_post_thumbnail()) { ?>
+
+			<?php if (is_page('front-page')) { ?>
+
+				<div class="page-feature-image" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url(<?= get_the_post_thumbnail_url(); ?>);">
+					<img class="inhabitent-text-logo" src="<?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-full.svg" alt="<?php echo $term->name; ?>" />
+				</div>
+			<?php } elseif (is_page()) { ?>
+
+				<div class="page-feature-image" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url(<?= get_the_post_thumbnail_url(); ?>);">
+					<h1 class="page-feature-image-title"><?php the_title(); ?></h1>
+				</div>
+		<?php }
+		} ?>
 
 		<div id="content" class="site-content">
