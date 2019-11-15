@@ -46,7 +46,7 @@
 
   .content-area {
     width: 70%;
-    border-right: 1px solid $light_grey_brand_color;
+    border-right: 1px solid $solid-border-brand-color;
     padding: ($base__space-unit * 2) ($base__space-unit * 3)
       ($base__space-unit * 2) 0;
   }
@@ -80,7 +80,11 @@
     top: 0;
     a {
       color: $main_background;
-      text-decoration: none;
+      &:hover,
+      &:focus,
+      &:active {
+        color: $orange_brand_color;
+      }
     }
   }
   .entry-meta {

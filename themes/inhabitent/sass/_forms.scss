@@ -49,7 +49,8 @@ input[type='submit'] {
   padding: ($base__space-unit * 0.5) $base__space-unit;
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     color: $main_background;
     background-color: $green_brand_color;
     border-color: $green_brand_color;

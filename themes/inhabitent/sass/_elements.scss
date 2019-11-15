@@ -1,9 +1,10 @@
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
-
-html {
+* {
   box-sizing: border-box;
+}
+html {
   @include font-size(1);
 }
 
@@ -28,12 +29,12 @@ q {
   }
 }
 
-hr {
-  background-color: $light_grey_brand_color;
-  border: 0;
-  height: 1px;
-  margin-bottom: $base__space-unit;
-}
+// hr {
+//   background-color: $light_grey_brand_color;
+//   border: 0;
+//   height: 1px;
+//   margin-bottom: $base__space-unit;
+// }
 
 ul,
 ol {

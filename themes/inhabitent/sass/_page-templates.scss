@@ -22,14 +22,14 @@
 }
 
 .front-page-journal-post {
-  border: 1px solid $light_grey_brand_color;
+  border: 1px solid $solid-border-brand-color;
   margin: $base__space-unit * 0.5;
   height: 420px;
   position: relative;
 
   img {
     padding-bottom: 5px;
-    background-color: $light_grey_brand_color;
+    background-color: $solid-border-brand-color;
   }
 }
 
@@ -69,4 +69,11 @@
 
 .single-product-area {
   width: 100%;
+}
+
+.social-container {
+  margin: $base__space-unit 0;
+  a {
+    margin-right: $base__space-unit * 0.25;
+  }
 }

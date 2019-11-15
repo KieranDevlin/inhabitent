@@ -24,14 +24,21 @@
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php
-		wp_link_pages(array(
-			'before' => '<div class="page-links">' . esc_html('Pages:'),
-			'after'  => '</div>',
-		));
+		//wp_link_pages(array(
+		//	'before' => '<div class="page-links">' . esc_html('Pages:'),
+		//	'after'  => '</div>',
+		// ));
 		?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
 		<?php red_starter_entry_footer(); ?>
+		<div class="social-container">
+			<a class="read-more-button " href="#"><i class="fab fa-facebook-f icon-styles"></i>LIKE</a>
+			<a class="read-more-button " href="#"><i class="fab fa-twitter icon-styles"></i>TWEET</a>
+			<a class="read-more-button " href="#"><i class="fab fa-pinterest icon-styles"></i>PIN</a>
+
+		</div>
+
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
