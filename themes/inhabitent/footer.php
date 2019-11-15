@@ -10,7 +10,7 @@
 
 </div><!-- #content -->
 
-<footer id="colophon" class="site-footer" role="contentinfo" style="background:url(<?= get_stylesheet_directory_uri(); ?>/images/dark-wood.png)">
+<footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="site-footer-main">
 		<div class="business-info">
 			<div class="footer-info">

@@ -9,6 +9,14 @@
     border-right: none;
   }
 }
+.front-page-title {
+  letter-spacing: 3px;
+  font-size: $base__space-unit * 1.5;
+  font-weight: lighter;
+  text-align: center;
+  margin: ($base__space-unit * 2) 0;
+}
+
 .front-page-journal-container {
   display: flex;
 }
@@ -45,6 +53,16 @@
 //about page layout
 .about-content-area {
   width: 80%;
+  margin: 0 auto;
+
+  .entry-content {
+    margin: ($base__space-unit * 3) 0;
+  }
+  h2 {
+    font-size: $base__space-unit * 1.5;
+    text-align: center;
+    margin: $base__space-unit * 2;
+  }
 }
 
 /* Single Product */

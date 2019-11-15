@@ -74,6 +74,7 @@
     line-height: 1.25;
     font-size: $base__space-unit * 1.5;
     background-color: $green_brand_color;
+    color: $main_background;
     padding: $base__space-unit * 0.5;
     position: absolute;
     top: 0;
@@ -91,7 +92,24 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    scroll-behavior: smooth;
+    a {
+      color: $main_background;
+      &:hover,
+      &:focus,
+      &:active {
+        color: $orange_brand_color;
+      }
+    }
   }
+}
+
+// content footer
+
+.tags-links,
+.cat-links {
+  font-family: $font__headings;
+  text-transform: uppercase;
 }
 
 /* Asides */
