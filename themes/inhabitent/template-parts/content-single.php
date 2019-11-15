@@ -34,9 +34,9 @@
 	<footer class="entry-footer">
 		<?php red_starter_entry_footer(); ?>
 		<div class="social-container">
-			<a class="read-more-button " href="#"><i class="fab fa-facebook-f icon-styles"></i>LIKE</a>
-			<a class="read-more-button " href="#"><i class="fab fa-twitter icon-styles"></i>TWEET</a>
-			<a class="read-more-button " href="#"><i class="fab fa-pinterest icon-styles"></i>PIN</a>
+			<a class="inhabitent-button " href="#"><i class="fab fa-facebook-f icon-styles"></i>LIKE</a>
+			<a class="inhabitent-button " href="#"><i class="fab fa-twitter icon-styles"></i>TWEET</a>
+			<a class="inhabitent-button " href="#"><i class="fab fa-pinterest icon-styles"></i>PIN</a>
 
 		</div>
 
