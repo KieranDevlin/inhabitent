@@ -80,14 +80,15 @@
   margin-bottom: $base__space-unit * 2;
 }
 
-.entry-header {
-  line-height: 0;
-  position: relative;
+.journal {
+  .entry-header {
+    line-height: 0;
+    position: relative;
 
-  .entry-title {
-    a {
-      max-width: 75%;
+    .entry-title {
+      text-transform: uppercase;
       margin: ($base__space-unit * 1.5) 0;
+      max-width: 78.275%;
       line-height: 1.25;
       font-size: $base__space-unit * 1.5;
       background-color: $green_brand_color;
@@ -95,30 +96,35 @@
       padding: $base__space-unit * 0.5;
       position: absolute;
       top: 0;
-      color: $main_background;
-      &:hover,
-      &:focus,
-      &:active {
-        color: $orange_brand_color;
+
+      a {
+        color: $main_background;
+        &:hover,
+        &:focus,
+        &:active {
+          color: $orange_brand_color;
+        }
       }
     }
-  }
-  .entry-meta {
-    line-height: 2;
-    background-color: $green_brand_color;
-    color: $main_background;
-    padding: $base__space-unit * 0.2 $base__space-unit;
-
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    scroll-behavior: smooth;
-    a {
+    .entry-meta {
+      line-height: 2;
+      background-color: $green_brand_color;
       color: $main_background;
-      &:hover,
-      &:focus,
-      &:active {
-        color: $orange_brand_color;
+      padding: $base__space-unit * 0.2 $base__space-unit;
+      font-family: $font__headings;
+      text-transform: uppercase;
+
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      scroll-behavior: smooth;
+      a {
+        color: $main_background;
+        &:hover,
+        &:focus,
+        &:active {
+          color: $orange_brand_color;
+        }
       }
     }
   }
@@ -164,6 +170,8 @@
       background-color: $green_brand_color;
       color: $main_background;
       padding: $base__space-unit * 0.2 $base__space-unit;
+      font-family: $font__headings;
+      text-transform: uppercase;
 
       position: absolute;
       bottom: 0;

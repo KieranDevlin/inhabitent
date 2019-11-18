@@ -238,24 +238,60 @@
 }
 
 .product-meta {
-  background: none;
   padding: $base__space-unit * 0.5;
+  font-size: $base__space-unit * 0.5;
+  background: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: $base__space-unit * 0.5;
-  p {
-    margin: 0;
+  overflow: hidden;
+
+  .dots-after {
+    position: relative;
+    white-space: nowrap;
+    flex-grow: 3;
+    display: flex;
+    overflow: hidden;
+
+    .product-title {
+      font-size: $base__space-unit * 0.66;
+      font-family: $font__main;
+      font-weight: normal;
+      margin: 0;
+      background: $main_background;
+    }
+
+    &::after {
+      content: '.....................................................................';
+      white-space: nowrap;
+      position: absolute;
+      z-index: -1;
+      // flex-grow: 2;
+      display: block;
+      left: 50%;
+      bottom: 0;
+      transform: translatex(-50%);
+    }
   }
-  .product-title {
-    font-size: $base__space-unit * 0.66;
-    font-family: $font__main;
-    font-weight: normal;
+  .price {
     margin: 0;
+    position: relative;
+    z-index: 3;
+    text-align: right;
   }
 }
 
-/* Single Product Page*/
+/* Product Taxonomy Pages */
+.product-taxonomy-terms {
+  padding-top: 0;
+  h1 {
+    margin-top: 0;
+    font-size: $base__space-unit * 2;
+  }
+  text-align: center;
+}
+
+/* Single Product Page */
 
 .product-page-area {
   display: flex;
@@ -279,4 +315,30 @@
 .product-content {
   width: 50%;
   padding: $base__space-unit;
+}
+
+/* Search Page */
+
+.search-page {
+  width: 70%;
+  border-right: 1px solid $solid-border-brand-color;
+  padding: 0 ($base__space-unit * 3) ($base__space-unit * 2) 0;
+
+  .page-title {
+    margin: 0 0 $base__space-unit * 3;
+    font-size: $base__space-unit * 1.75;
+    border-bottom: 1px solid $solid-border-brand-color;
+    padding: $base__space-unit 0;
+  }
+  .hentry {
+    margin: 0 0 $base__space-unit * 3;
+  }
+  .search-results {
+    padding: $base__space-unit 0;
+  }
+  .entry-title {
+    font-size: $base__space-unit * 1.33;
+    text-transform: uppercase;
+    margin: 0 0 ($base__space-unit * 0.25);
+  }
 }

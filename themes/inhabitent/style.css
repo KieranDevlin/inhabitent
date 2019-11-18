@@ -645,34 +645,38 @@ a {
           box-sizing: border-box;
   margin-bottom: 3rem; }
 
-.entry-header {
+.journal .entry-header {
   line-height: 0;
   position: relative; }
-  .entry-header .entry-title a {
-    max-width: 75%;
+  .journal .entry-header .entry-title {
+    text-transform: uppercase;
     margin: 2.25rem 0;
+    max-width: 78.275%;
     line-height: 1.25;
     font-size: 2.25rem;
     background-color: #248a83;
     color: #ffffff;
     padding: 0.75rem;
     position: absolute;
-    top: 0;
-    color: #ffffff; }
-    .entry-header .entry-title a:hover, .entry-header .entry-title a:focus, .entry-header .entry-title a:active {
-      color: #d99054; }
-  .entry-header .entry-meta {
+    top: 0; }
+    .journal .entry-header .entry-title a {
+      color: #ffffff; }
+      .journal .entry-header .entry-title a:hover, .journal .entry-header .entry-title a:focus, .journal .entry-header .entry-title a:active {
+        color: #d99054; }
+  .journal .entry-header .entry-meta {
     line-height: 2;
     background-color: #248a83;
     color: #ffffff;
     padding: 0.3rem 1.5rem;
+    font-family: "Novecento Sans Web", sans-serif;
+    text-transform: uppercase;
     position: absolute;
     bottom: 0;
     right: 0;
     scroll-behavior: smooth; }
-    .entry-header .entry-meta a {
+    .journal .entry-header .entry-meta a {
       color: #ffffff; }
-      .entry-header .entry-meta a:hover, .entry-header .entry-meta a:focus, .entry-header .entry-meta a:active {
+      .journal .entry-header .entry-meta a:hover, .journal .entry-header .entry-meta a:focus, .journal .entry-header .entry-meta a:active {
         color: #d99054; }
 
 .single-area .entry-header {
@@ -708,6 +712,8 @@ a {
     background-color: #248a83;
     color: #ffffff;
     padding: 0.3rem 1.5rem;
+    font-family: "Novecento Sans Web", sans-serif;
+    text-transform: uppercase;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -990,8 +996,9 @@ object {
     width: 260px; }
 
 .product-meta {
-  background: none;
   padding: 0.75rem;
+  font-size: 0.75rem;
+  background: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1001,16 +1008,48 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 0.75rem; }
-  .product-meta p {
-    margin: 0; }
-  .product-meta .product-title {
-    font-size: 0.99rem;
-    font-family: "Merriweather", serif;
-    font-weight: normal;
-    margin: 0; }
+  overflow: hidden; }
+  .product-meta .dots-after {
+    position: relative;
+    white-space: nowrap;
+    -webkit-box-flex: 3;
+        -ms-flex-positive: 3;
+            flex-grow: 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden; }
+    .product-meta .dots-after .product-title {
+      font-size: 0.99rem;
+      font-family: "Merriweather", serif;
+      font-weight: normal;
+      margin: 0;
+      background: #ffffff; }
+    .product-meta .dots-after::after {
+      content: '.....................................................................';
+      white-space: nowrap;
+      position: absolute;
+      z-index: -1;
+      display: block;
+      left: 50%;
+      bottom: 0;
+      -webkit-transform: translatex(-50%);
+              transform: translatex(-50%); }
+  .product-meta .price {
+    margin: 0;
+    position: relative;
+    z-index: 3;
+    text-align: right; }
 
-/* Single Product Page*/
+/* Product Taxonomy Pages */
+.product-taxonomy-terms {
+  padding-top: 0;
+  text-align: center; }
+  .product-taxonomy-terms h1 {
+    margin-top: 0;
+    font-size: 3rem; }
+
+/* Single Product Page */
 .product-page-area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1033,6 +1072,25 @@ object {
 .product-content {
   width: 50%;
   padding: 1.5rem; }
+
+/* Search Page */
+.search-page {
+  width: 70%;
+  border-right: 1px solid #e1e1e1;
+  padding: 0 4.5rem 3rem 0; }
+  .search-page .page-title {
+    margin: 0 0 4.5rem;
+    font-size: 2.625rem;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 1.5rem 0; }
+  .search-page .hentry {
+    margin: 0 0 4.5rem; }
+  .search-page .search-results {
+    padding: 1.5rem 0; }
+  .search-page .entry-title {
+    font-size: 1.995rem;
+    text-transform: uppercase;
+    margin: 0 0 0.375rem; }
 
 .site-header {
   z-index: 99999;
