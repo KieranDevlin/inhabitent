@@ -896,6 +896,77 @@ object {
     letter-spacing: 2px;
     text-transform: uppercase; }
 
+.adventure-section {
+  margin: 0 0 72px; }
+  .adventure-section .adventure-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    padding-bottom: 1.5rem; }
+    .adventure-section .adventure-grid .adventure-grid-item {
+      position: relative;
+      line-height: 0; }
+      .adventure-section .adventure-grid .adventure-grid-item img {
+        -o-object-fit: cover;
+           object-fit: cover;
+        height: 250px;
+        z-index: -99; }
+      .adventure-section .adventure-grid .adventure-grid-item::after {
+        content: '';
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.5)));
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0; }
+      .adventure-section .adventure-grid .adventure-grid-item .adventure-links {
+        margin: 1.875rem;
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        line-height: 1.25;
+        color: #ffffff; }
+        .adventure-section .adventure-grid .adventure-grid-item .adventure-links a {
+          left: 0; }
+          .adventure-section .adventure-grid .adventure-grid-item .adventure-links a h3 {
+            left: 0;
+            color: #ffffff;
+            font-family: "Merriweather", serif;
+            margin: 1.5rem 0 4.5rem; }
+            .adventure-section .adventure-grid .adventure-grid-item .adventure-links a h3:focus, .adventure-section .adventure-grid .adventure-grid-item .adventure-links a h3:active, .adventure-section .adventure-grid .adventure-grid-item .adventure-links a h3:hover {
+              color: #d99054; }
+        .adventure-section .adventure-grid .adventure-grid-item .adventure-links .inhabitent-button {
+          color: #ffffff;
+          border-color: #ffffff; }
+          .adventure-section .adventure-grid .adventure-grid-item .adventure-links .inhabitent-button:focus, .adventure-section .adventure-grid .adventure-grid-item .adventure-links .inhabitent-button:active, .adventure-section .adventure-grid .adventure-grid-item .adventure-links .inhabitent-button:hover {
+            border: 1px solid #248a83; }
+      .adventure-section .adventure-grid .adventure-grid-item:nth-of-type(1) {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2; }
+        .adventure-section .adventure-grid .adventure-grid-item:nth-of-type(1) img {
+          height: 100%; }
+        .adventure-section .adventure-grid .adventure-grid-item:nth-of-type(1) h3 {
+          font-size: 2.625rem; }
+      .adventure-section .adventure-grid .adventure-grid-item:nth-of-type(2) {
+        grid-column: 3 / span 2;
+        font-size: 1.875rem; }
+      .adventure-section .adventure-grid .adventure-grid-item:nth-of-type(3) {
+        font-size: 1.125rem; }
+      .adventure-section .adventure-grid .adventure-grid-item:nth-of-type(4) {
+        font-size: 1.125rem; }
+  .adventure-section .adventure-button {
+    background-color: #248a83;
+    border-color: #248a83;
+    color: #ffffff;
+    font-size: 1.275rem; }
+    .adventure-section .adventure-button:hover, .adventure-section .adventure-button:active, .adventure-section .adventure-button:focus {
+      background-color: #175753;
+      border-color: #175753; }
+
 /* About page */
 .about-content-area {
   margin: 0 auto;
@@ -925,6 +996,9 @@ object {
   width: 100%; }
   .google-maps-location iframe {
     width: 100%; }
+
+.wpcf7 .inhabitent-button {
+  margin: 1.5rem 0; }
 
 .wpcf7 p {
   margin: 0; }
@@ -1091,6 +1165,57 @@ object {
     font-size: 1.995rem;
     text-transform: uppercase;
     margin: 0 0 0.375rem; }
+
+/* Adventures Archive */
+.adventure-archive h1 {
+  margin-bottom: 0; }
+
+.adventure-archive .adventure-archive-grid {
+  margin: 72px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1.5rem; }
+  .adventure-archive .adventure-archive-grid .adventure-grid-item {
+    position: relative;
+    line-height: 0; }
+    .adventure-archive .adventure-archive-grid .adventure-grid-item img {
+      -o-object-fit: cover;
+         object-fit: cover;
+      height: 500px;
+      z-index: -99; }
+    .adventure-archive .adventure-archive-grid .adventure-grid-item::after {
+      content: '';
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.5)));
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+      position: absolute;
+      z-index: 1;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0; }
+    .adventure-archive .adventure-archive-grid .adventure-grid-item .adventure-links {
+      margin: 1.875rem;
+      position: absolute;
+      top: 0;
+      z-index: 2;
+      line-height: 1.25;
+      color: #ffffff; }
+      .adventure-archive .adventure-archive-grid .adventure-grid-item .adventure-links a {
+        left: 0; }
+        .adventure-archive .adventure-archive-grid .adventure-grid-item .adventure-links a h3 {
+          font-size: 3rem;
+          left: 0;
+          color: #ffffff;
+          font-family: "Merriweather", serif;
+          margin: 1.5rem 0 4.5rem; }
+          .adventure-archive .adventure-archive-grid .adventure-grid-item .adventure-links a h3:focus, .adventure-archive .adventure-archive-grid .adventure-grid-item .adventure-links a h3:active, .adventure-archive .adventure-archive-grid .adventure-grid-item .adventure-links a h3:hover {
+            color: #d99054; }
+      .adventure-archive .adventure-archive-grid .adventure-grid-item .adventure-links .inhabitent-button {
+        color: #ffffff;
+        border-color: #ffffff; }
+        .adventure-archive .adventure-archive-grid .adventure-grid-item .adventure-links .inhabitent-button:focus, .adventure-archive .adventure-archive-grid .adventure-grid-item .adventure-links .inhabitent-button:active, .adventure-archive .adventure-archive-grid .adventure-grid-item .adventure-links .inhabitent-button:hover {
+          border: 1px solid #248a83; }
 
 .site-header {
   z-index: 99999;

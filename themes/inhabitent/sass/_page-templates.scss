@@ -108,6 +108,112 @@
     text-transform: uppercase;
   }
 }
+
+// adventure section
+
+.adventure-section {
+  margin: 0 0 72px;
+  .adventure-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: $base__space-unit;
+    padding-bottom: $base__space-unit;
+
+    .adventure-grid-item {
+      position: relative;
+      line-height: 0;
+      img {
+        object-fit: cover;
+        height: 250px;
+        z-index: -99;
+      }
+
+      &::after {
+        content: '';
+        background-image: linear-gradient(
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.5)
+        );
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+      }
+
+      .adventure-links {
+        margin: $base__space-unit * 1.25;
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        line-height: 1.25;
+
+        a {
+          left: 0;
+
+          h3 {
+            left: 0;
+            color: $main_background;
+            font-family: $font__main;
+            margin: $base__space-unit 0 ($base__space-unit * 3);
+            &:focus,
+            &:active,
+            &:hover {
+              color: $orange-brand-color;
+            }
+          }
+        }
+        .inhabitent-button {
+          color: $main_background;
+          border-color: $main_background;
+          &:focus,
+          &:active,
+          &:hover {
+            border: 1px solid $green-brand-color;
+          }
+        }
+        color: $main_background;
+      }
+      &:nth-of-type(1) {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        img {
+          height: 100%;
+        }
+        h3 {
+          font-size: $base__space-unit * 1.75;
+        }
+      }
+      &:nth-of-type(2) {
+        grid-column: 3 / span 2;
+        font-size: $base__space-unit * 1.25;
+      }
+      &:nth-of-type(3) {
+        font-size: $base__space-unit * 0.75;
+      }
+      &:nth-of-type(4) {
+        font-size: $base__space-unit * 0.75;
+      }
+    }
+  }
+
+  .adventure-button {
+    background-color: $green-brand-color;
+    border-color: $green-brand-color;
+    color: $main_background;
+    font-size: $base__space-unit * 0.85;
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: darken($green-brand-color, 12.5%);
+      border-color: darken($green-brand-color, 12.5%);
+    }
+  }
+}
+
 /* About page */
 
 //about page layout
@@ -160,6 +266,9 @@
   }
 }
 .wpcf7 {
+  .inhabitent-button {
+    margin: $base__space-unit 0;
+  }
   p {
     margin: 0;
     .wpcf7-text {
@@ -340,5 +449,79 @@
     font-size: $base__space-unit * 1.33;
     text-transform: uppercase;
     margin: 0 0 ($base__space-unit * 0.25);
+  }
+}
+
+/* Adventures Archive */
+
+.adventure-archive {
+  h1 {
+    margin-bottom: 0;
+  }
+
+  .adventure-archive-grid {
+    margin: 72px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: $base__space-unit;
+    .adventure-grid-item {
+      position: relative;
+      line-height: 0;
+      img {
+        object-fit: cover;
+        height: 500px;
+        z-index: -99;
+      }
+
+      &::after {
+        content: '';
+        background-image: linear-gradient(
+          rgba(0, 0, 0, 0.3),
+          rgba(0, 0, 0, 0.5)
+        );
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+      }
+
+      .adventure-links {
+        margin: $base__space-unit * 1.25;
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        line-height: 1.25;
+        color: $main_background;
+
+        a {
+          left: 0;
+
+          h3 {
+            font-size: $base__space-unit * 2;
+            left: 0;
+            color: $main_background;
+            font-family: $font__main;
+            margin: $base__space-unit 0 ($base__space-unit * 3);
+            &:focus,
+            &:active,
+            &:hover {
+              color: $orange-brand-color;
+            }
+          }
+        }
+        .inhabitent-button {
+          color: $main_background;
+          border-color: $main_background;
+          &:focus,
+          &:active,
+          &:hover {
+            border: 1px solid $green-brand-color;
+          }
+        }
+      }
+    }
   }
 }
