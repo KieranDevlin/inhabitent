@@ -1217,6 +1217,22 @@ object {
         .adventure-archive .adventure-archive-grid .adventure-grid-item .adventure-links .inhabitent-button:focus, .adventure-archive .adventure-archive-grid .adventure-grid-item .adventure-links .inhabitent-button:active, .adventure-archive .adventure-archive-grid .adventure-grid-item .adventure-links .inhabitent-button:hover {
           border: 1px solid #248a83; }
 
+/* Single Adventure Post */
+.single-adventure-area .adventure-meta {
+  margin: 0 0 2.25rem; }
+
+.single-adventure-area .adventure-title {
+  margin: 0;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 2.625rem; }
+
+.single-adventure-area .adventure-author {
+  margin: 0;
+  text-transform: uppercase;
+  font-family: "Novecento Sans Web", sans-serif;
+  font-size: 1.5rem; }
+
 .site-header {
   z-index: 99999;
   min-width: 100%;

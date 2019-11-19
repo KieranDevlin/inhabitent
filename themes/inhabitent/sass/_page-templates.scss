@@ -525,3 +525,24 @@
     }
   }
 }
+
+/* Single Adventure Post */
+
+.single-adventure-area {
+  .adventure-meta {
+    margin: 0 0 ($base__space-unit * 1.5);
+  }
+  .adventure-title {
+    margin: 0;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: $base__space-unit * 1.75;
+  }
+  .adventure-author {
+    margin: 0;
+
+    text-transform: uppercase;
+    font-family: $font__headings;
+    font-size: $base__space-unit;
+  }
+}
