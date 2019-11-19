@@ -23,13 +23,7 @@
 /* Front page */
 
 //layout
-.front-page-content-area {
-  .site-main {
-    // width: 1120px;
-    // border-right: none;
-    // margin: 0 auto;
-  }
-}
+
 .front-page-title {
   letter-spacing: 3px;
   font-size: $base__space-unit * 1.5;
@@ -221,12 +215,6 @@
 .about-content-area {
   margin: 0 auto;
   width: 75%;
-
-  .site-main {
-    // width: 1120px;
-    // border-right: none;
-    // margin: 0 auto;
-  }
 
   .entry-content {
     margin: 0 0 72px;
