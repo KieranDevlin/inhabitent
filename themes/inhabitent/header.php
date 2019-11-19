@@ -34,7 +34,7 @@
 						<p class="site-description"><?php bloginfo('description'); ?></p>
 					</h1>
 					<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-						<img class="home-logo" src="<?= get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg" ;<?php bloginfo('name'); ?> />
+						<img id="home-logo" class="home-logo" src="<?= get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg" ;<?php bloginfo('name'); ?> />
 					</a>
 				</div><!-- .site-branding -->
 
@@ -53,17 +53,17 @@
 
 			<?php if (is_page('front-page')) { ?>
 
-				<div class="page-feature-image" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url(<?= get_the_post_thumbnail_url(); ?>);">
+				<div class="page-feature-image header-feature-image" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url(<?= get_the_post_thumbnail_url(); ?>);">
 					<img class="inhabitent-text-logo" src="<?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-full.svg" alt="<?php echo $term->name; ?>" />
 				</div>
 			<?php } elseif (is_page()) { ?>
 
-				<div class="page-feature-image" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url(<?= get_the_post_thumbnail_url(); ?>);">
+				<div class="page-feature-image header-feature-image" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url(<?= get_the_post_thumbnail_url(); ?>);">
 					<h1 class="page-feature-image-title"><?php the_title(); ?></h1>
 				</div>
 			<?php } elseif (is_singular('adventure')) { ?>
 
-				<div class="page-feature-image" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url(<?= get_the_post_thumbnail_url(); ?>);">
+				<div class="page-feature-image header-feature-image" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url(<?= get_the_post_thumbnail_url(); ?>);">
 				</div>
 		<?php }
 		} ?>

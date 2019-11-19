@@ -206,6 +206,42 @@
 
 /* Comments */
 
+.comments-area {
+  .comment-content {
+    padding-bottom: $base__space-unit;
+    border-bottom: 1px solid $solid-border-brand-color;
+  }
+}
+
+.comment-respond {
+  h3 {
+    font-size: $base__space-unit * 1.5;
+  }
+}
+.comment-form-comment {
+  display: flex;
+  flex-direction: column;
+  textarea {
+    background-color: $solid-border-brand-color;
+    border-color: $dotted-border-brand-color;
+  }
+}
+.form-submit {
+  .submit {
+    font-family: $font__headings;
+    text-transform: uppercase;
+    background-color: $green-brand-color;
+    border-color: $green-brand-color;
+    color: $main_background;
+    padding: $base__space-unit * 0.25 $base__space-unit * 0.75;
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: darken($green-brand-color, 12.5%);
+      border-color: darken($green-brand-color, 12.5%);
+    }
+  }
+}
 .comment-content a {
   word-wrap: break-word;
 }
