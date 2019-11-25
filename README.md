@@ -1,4 +1,4 @@
-### Inhabitent
+# Inhabitent
 
 This is the third project in the RED Academy Web Dev program. A custom WordPress theme for Inhabitent - an online camping store and blog.
 
@@ -6,21 +6,21 @@ This is the third project in the RED Academy Web Dev program. A custom WordPress
 
 This WordPress site is not hosted so you will need to follow this setup to view the site.
 
-# 1
+### 1
 
 - ensure you have (Node.js)[https://nodejs.org/en/] installed in your terminal
 
-# 2
+### 2
 
 - ensure you have (MAMP)[https://www.mamp.info/en/] installed and running a local server in order to view the site and access the database
 
-# 3
+### 3
 
 - with the previous technologies installed you can now run `npm install` to now install the dev dependencies associated with the project
 
-# 4
+### 4
 
-- with the technologies and dependencies installed you can now run and view the site!
+- with the technologies and dependencies installed you can now run and view the site!`
 
 ## Key Learnings
 
