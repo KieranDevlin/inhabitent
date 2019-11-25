@@ -8,11 +8,11 @@ This WordPress site is not hosted so you will need to follow this setup to view 
 
 ### 1
 
-- ensure you have (Node.js)[https://nodejs.org/en/] installed in your terminal
+- ensure you have [Node.js](https://nodejs.org/en/) installed in your terminal
 
 ### 2
 
-- ensure you have (MAMP)[https://www.mamp.info/en/] installed and running a local server in order to view the site and access the database
+- ensure you have [MAMP](https://www.mamp.info/en/) installed and running a local server in order to view the site and access the database
 
 ### 3
 
