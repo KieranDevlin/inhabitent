@@ -2395,6 +2395,8 @@ $this->rules[165] = wfWAFRule::create($this, 165, NULL, 'auth-bypass', '100', 'L
 ), array (
 )))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'administrator', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
 ))))));
+$this->rules[166] = wfWAFRule::create($this, 166, NULL, 'redirect', '100', 'Qode Instagram Widget <= 2.0.1 - Unauthenticated Open Redirect', 1, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '/\\/qode-instagram-widget\\/lib\\/instagram-redirect\\.php/i', array(wfWAFRuleComparisonSubject::create($this, 'server.script_filename', array (
+))))));
 $this->rules[167] = wfWAFRule::create($this, 167, NULL, 'auth-bypass', '100', 'Motors – Car Dealer & Classified Ads <= 1.4.0 - Multiple Options Update vulnerabilities', 1, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'lengthGreaterThan', '0', array(wfWAFRuleComparisonSubject::create($this, array (
   0 => 'request.files',
   1 => 'import_settings',
@@ -2580,5 +2582,7 @@ wfWAFRuleComparisonSubject::create($this, array (
   1 => '418c5509e2171d55b0aee5c2ea4442b5',
 ), array (
 )))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'administrator', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
+))))));
+$this->rules[184] = wfWAFRule::create($this, 184, NULL, 'redirect', '100', 'Qode Twitter Feed <= 2.0.1 - Unauthenticated Open Redirect', 1, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '/\\/qode-twitter-feed\\/lib\\/twitter-redirect\\.php/i', array(wfWAFRuleComparisonSubject::create($this, 'server.script_filename', array (
 ))))));
 ?>
