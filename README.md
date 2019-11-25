@@ -20,7 +20,7 @@ This WordPress site is not hosted so you will need to follow this setup to view 
 
 ### 4
 
-- with the technologies and dependencies installed you can now run and view the site!`
+- with the technologies and dependencies installed you can now run and view the site!
 
 ## Key Learnings
 
