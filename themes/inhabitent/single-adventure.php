@@ -19,7 +19,7 @@ get_header(); ?>
 				<p class="adventure-author">BY <?php the_author(); ?></p>
 
 			</div>
-			<p> <?php get_template_part('template-parts/content', 'page'); ?></p>
+			<?php get_template_part('template-parts/content', 'page'); ?>
 			<div class="social-container">
 				<a class="inhabitent-button " href="#"><i class="fab fa-facebook-f icon-styles"></i>LIKE</a>
 				<a class="inhabitent-button " href="#"><i class="fab fa-twitter icon-styles"></i>TWEET</a>
