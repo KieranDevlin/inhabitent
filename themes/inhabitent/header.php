@@ -19,9 +19,6 @@
 	<!-- FAVICON -->
 	<link rel="icon" href="<?= get_stylesheet_directory_uri(); ?>/images/favicon.ico">
 
-	<!-- GOOGLE FONTS -->
-	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400&display=swap" rel="stylesheet">
-
 
 	<?php wp_head(); ?>
 </head>
