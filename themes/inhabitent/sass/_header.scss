@@ -44,7 +44,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // height: $base__space-unit;
   overflow: hidden;
   transition: 0.5s;
   width: 0;
@@ -54,10 +53,13 @@
   input::placeholder {
     color: $green_brand_color;
   }
+  input[value=''] {
+    color: $green_brand_color;
+  }
 }
 
 .animate-container {
-  width: 220px;
+  width: 207px;
 }
 
 .search-form {
@@ -89,7 +91,12 @@
   label {
     color: $main_background;
   }
-  input::placeholder {
+  input {
+    &::placeholder {
+      color: $main_background;
+    }
+  }
+  input[value=''] {
     color: $main_background;
   }
   a,

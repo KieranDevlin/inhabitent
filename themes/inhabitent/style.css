@@ -1322,9 +1322,11 @@ object {
     color: #248a83; }
   .search-text-container input::placeholder {
     color: #248a83; }
+  .search-text-container input[value=''] {
+    color: #248a83; }
 
 .animate-container {
-  width: 220px; }
+  width: 207px; }
 
 .search-form {
   height: 1.5rem; }
@@ -1359,6 +1361,9 @@ object {
   color: #ffffff; }
 
 .white-items input::placeholder {
+  color: #ffffff; }
+
+.white-items input[value=''] {
   color: #ffffff; }
 
 .white-items a,
