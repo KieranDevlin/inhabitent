@@ -14,12 +14,8 @@ get_header(); ?>
         <section class="product-type-container product-taxonomy-terms">
 
             <h1><?php single_term_title(); ?></h1>
-            <p><?php the_archive_description(); ?></p>
-
-
+            <?php the_archive_description(); ?>
         </section>
-
-
         <div class="product-grid">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -44,6 +40,7 @@ get_header(); ?>
                 else : ?>
                 <p><?php esc_html_e('Sorry, no posts matched your criteria.'); ?></p>
             <?php endif; ?>
+        </div>
     </main><!-- #main -->
 </div><!-- #primary -->
 
