@@ -9,3 +9,8 @@ searchIcon.addEventListener('click', () => {
   searchInput.classList.toggle('animate-search');
   searchInput.focus();
 });
+
+searchInput.addEventListener('blur', () => {
+  searchContainer.classList.remove('animate-container');
+  searchInput.classList.remove('animate-search');
+});

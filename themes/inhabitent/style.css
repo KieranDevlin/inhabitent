@@ -398,6 +398,7 @@ a {
 
 /* Fields */
 fieldset {
+  height: 1.5rem;
   border: none;
   padding: 0;
   margin: 0; }
@@ -1300,7 +1301,15 @@ object {
     color: #248a83; }
 
 .search-text-container {
-  height: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -1317,14 +1326,15 @@ object {
 .animate-container {
   width: 220px; }
 
+.search-form {
+  height: 1.5rem; }
+
 .search-field {
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: none;
-  position: relative;
   overflow: hidden;
-  top: 0;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transform: translatex(100px);

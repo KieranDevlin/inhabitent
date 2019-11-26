@@ -41,7 +41,10 @@
 }
 
 .search-text-container {
-  height: $base__space-unit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // height: $base__space-unit;
   overflow: hidden;
   transition: 0.5s;
   width: 0;
@@ -57,13 +60,17 @@
   width: 220px;
 }
 
+.search-form {
+  height: $base__space-unit;
+}
+
 .search-field {
   border: none;
   box-shadow: none;
   outline: none;
-  position: relative;
+  // position: relative;
   overflow: hidden;
-  top: 0;
+  // top: 0;
   transition: 0.5s;
   transform: translatex(100px);
 }
