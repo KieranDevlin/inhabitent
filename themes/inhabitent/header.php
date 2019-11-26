@@ -33,11 +33,11 @@
 		<header id="masthead" class="site-header" role="banner">
 			<div class="header-items">
 				<div class="site-branding">
-					<h1 class="site-title screen-reader-text">
-						<p class="site-description"><?php bloginfo('description'); ?></p>
+					<h1 class="site-title screen-reader-text site-description">
+						<?php bloginfo('description'); ?>
 					</h1>
 					<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-						<img id="home-logo" class="home-logo" src="<?= get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg" ;<?php bloginfo('name'); ?> />
+						<img id="home-logo" class="home-logo" src="<?= get_stylesheet_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg" alt="<?php bloginfo('name'); ?> " />
 					</a>
 				</div><!-- .site-branding -->
 
