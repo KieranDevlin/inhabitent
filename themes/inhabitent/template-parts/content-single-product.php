@@ -8,7 +8,7 @@
 
 ?>
 
-<article class="product-page-area" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article class="product-page-area" id="post-<?php the_ID(); ?>">
 	<header class="product-single-image">
 		<?php if (has_post_thumbnail()) : ?>
 			<?php the_post_thumbnail('full'); ?>
