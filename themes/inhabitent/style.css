@@ -741,7 +741,10 @@ a {
 .comment-respond h3 {
   font-size: 2.25rem; }
 
-.comment-form-comment {
+.comment-form-comment,
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -749,9 +752,22 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  .comment-form-comment textarea {
+  .comment-form-comment textarea,
+  .comment-form-author textarea,
+  .comment-form-email textarea,
+  .comment-form-url textarea {
     background-color: #e1e1e1;
     border-color: #c8c8c8; }
+  .comment-form-comment input,
+  .comment-form-author input,
+  .comment-form-email input,
+  .comment-form-url input {
+    padding: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: 50%;
+    border: 1px solid #c8c8c8;
+    background-color: #e1e1e1; }
 
 .form-submit .submit {
   font-family: "Novecento Sans Web", sans-serif;

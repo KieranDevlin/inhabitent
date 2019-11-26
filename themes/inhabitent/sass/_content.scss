@@ -206,12 +206,22 @@
     font-size: $base__space-unit * 1.5;
   }
 }
-.comment-form-comment {
+.comment-form-comment,
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
   display: flex;
   flex-direction: column;
   textarea {
     background-color: $solid-border-brand-color;
     border-color: $dotted-border-brand-color;
+  }
+  input {
+    padding: 0;
+    box-shadow: none;
+    width: 50%;
+    border: 1px solid $dotted-border-brand-color;
+    background-color: $solid-border-brand-color;
   }
 }
 .form-submit {
