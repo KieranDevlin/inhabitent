@@ -19,8 +19,8 @@ get_header(); ?>
 
 
         <div class="adventure-archive-grid">
-            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
                     <div class="adventure-grid-item">
                         <?php the_post_thumbnail('full'); ?>
@@ -35,9 +35,9 @@ get_header(); ?>
                     </div>
                 <?php endwhile;
                 else : ?>
+                <p><?php esc_html_e('Sorry, no posts matched your criteria.'); ?></p>
+            <?php endif; ?>
         </div>
-        <p><?php esc_html_e('Sorry, no posts matched your criteria.'); ?></p>
-    <?php endif; ?>
     </main><!-- #main -->
 </div><!-- #primary -->
 
