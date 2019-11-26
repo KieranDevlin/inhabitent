@@ -44,8 +44,8 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('Primary Menu'); ?></button>
 					<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
-					<button aria-label="Search" class="search-button"><i id="search" class="fas fa-search search-image fa-2x"></i> </button>
-					<div class="search-text-container" id="search-text-container">
+					<button aria-label="Search" class="search-button"><i class="fas fa-search search-image fa-2x"></i> </button>
+					<div class="search-text-container">
 						<?= get_search_form(); ?>
 					</div>
 				</nav><!-- #site-navigation -->
@@ -56,7 +56,7 @@
 
 			<?php if (is_page('front-page')) { ?>
 
-				<div class="page-feature-image header-feature-image" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url(<?= get_the_post_thumbnail_url(); ?>);">
+				<div class=" page-feature-image header-feature-image" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url(<?= get_the_post_thumbnail_url(); ?>);">
 					<img class="inhabitent-text-logo" src="<?php echo get_template_directory_uri() ?>/images/logos/inhabitent-logo-full.svg" alt="<?php echo $term->name; ?>" />
 				</div>
 			<?php } elseif (is_page()) { ?>

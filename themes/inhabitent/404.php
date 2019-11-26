@@ -20,6 +20,7 @@ get_header(); ?>
 
 			<div class="page-content">
 				<p><?php echo esc_html('It looks like nothing was found at this location. Maybe try one of the links below or a new search?'); ?></p>
+				<?php get_search_form(); ?>
 
 				<?php the_widget('WP_Widget_Recent_Posts'); ?>
 

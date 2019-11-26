@@ -535,3 +535,17 @@
     font-size: $base__space-unit;
   }
 }
+
+/* 404 Page */
+
+.error-404 {
+  label {
+    display: none;
+  }
+  fieldset {
+    padding-left: 3rem;
+    .search-field {
+      transform: none;
+    }
+  }
+}
