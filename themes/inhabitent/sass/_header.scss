@@ -48,10 +48,13 @@
   label {
     color: $green_brand_color;
   }
+  input::placeholder {
+    color: $green_brand_color;
+  }
 }
 
 .animate-container {
-  width: 200px;
+  width: 220px;
 }
 
 .search-field {
@@ -77,6 +80,9 @@
 
 .white-items {
   label {
+    color: $main_background;
+  }
+  input::placeholder {
     color: $main_background;
   }
   a,

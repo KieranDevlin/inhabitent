@@ -1307,9 +1307,15 @@ object {
   width: 0; }
   .search-text-container label {
     color: #248a83; }
+  .search-text-container input::-webkit-input-placeholder {
+    color: #248a83; }
+  .search-text-container input::-ms-input-placeholder {
+    color: #248a83; }
+  .search-text-container input::placeholder {
+    color: #248a83; }
 
 .animate-container {
-  width: 200px; }
+  width: 220px; }
 
 .search-field {
   border: none;
@@ -1334,6 +1340,15 @@ object {
   border: none; }
 
 .white-items label {
+  color: #ffffff; }
+
+.white-items input::-webkit-input-placeholder {
+  color: #ffffff; }
+
+.white-items input::-ms-input-placeholder {
+  color: #ffffff; }
+
+.white-items input::placeholder {
   color: #ffffff; }
 
 .white-items a,

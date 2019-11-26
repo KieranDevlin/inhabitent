@@ -7,4 +7,5 @@ const searchContainer = document.getElementById('search-text-container');
 searchIcon.addEventListener('click', () => {
   searchContainer.classList.toggle('animate-container');
   searchInput.classList.toggle('animate-search');
+  searchInput.focus();
 });
