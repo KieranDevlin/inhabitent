@@ -81,6 +81,7 @@ get_header(); ?>
 				$args = [
 					'post_type' => 'adventure',
 					'order' => 'DESC',
+					'posts_per_page' => 4,
 				];
 				$adventure_posts = get_posts($args); // returns an array of posts
 				?>
