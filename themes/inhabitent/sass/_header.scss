@@ -45,6 +45,9 @@
   overflow: hidden;
   transition: 0.5s;
   width: 0;
+  label {
+    color: $green_brand_color;
+  }
 }
 
 .animate-container {
@@ -73,6 +76,9 @@
 }
 
 .white-items {
+  label {
+    color: $main_background;
+  }
   a,
   .fas {
     color: $main_background;

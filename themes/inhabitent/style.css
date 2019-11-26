@@ -1305,6 +1305,8 @@ object {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   width: 0; }
+  .search-text-container label {
+    color: #248a83; }
 
 .animate-container {
   width: 200px; }
@@ -1330,6 +1332,9 @@ object {
   position: absolute;
   background: none;
   border: none; }
+
+.white-items label {
+  color: #ffffff; }
 
 .white-items a,
 .white-items .fas {
