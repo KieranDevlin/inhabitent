@@ -41,9 +41,6 @@
 }
 
 .search-text-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
   transition: 0.5s;
   width: 0;
@@ -70,15 +67,7 @@
   border: none;
   box-shadow: none;
   outline: none;
-  // position: relative;
   overflow: hidden;
-  // top: 0;
-  transition: 0.5s;
-  transform: translatex(100px);
-}
-
-.animate-search {
-  transform: translateX(0);
 }
 
 .reverse-header {

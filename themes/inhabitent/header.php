@@ -41,7 +41,7 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('Primary Menu'); ?></button>
 					<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
-					<button aria-label="Search" class="search-button"><i class="fas fa-search search-image fa-2x"></i> </button>
+					<button aria-label="Search" class="search-button"><i class="fas fa-search search-image "></i> </button>
 					<div class="search-text-container">
 						<?= get_search_form(); ?>
 					</div>
