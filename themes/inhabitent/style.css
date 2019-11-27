@@ -1298,6 +1298,8 @@ object {
   position: fixed;
   top: 0; }
   .site-header .header-items {
+    font-family: "Novecento Sans Web", sans-serif;
+    text-transform: uppercase;
     width: 1120px;
     margin: 0 auto;
     display: -webkit-box;
@@ -1356,7 +1358,9 @@ object {
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: none;
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
 
 .reverse-header {
   position: absolute;
