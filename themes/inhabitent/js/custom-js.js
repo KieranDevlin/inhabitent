@@ -9,12 +9,10 @@ searchIcon.addEventListener('click', () => {
     return;
   } else {
     searchContainer.classList.toggle('animate-container');
-    // searchInput.classList.toggle('animate-search');
     searchInput.focus();
   }
 });
 
 searchInput.addEventListener('blur', () => {
   searchContainer.classList.remove('animate-container');
-  // searchInput.classList.remove('animate-search');
 });
